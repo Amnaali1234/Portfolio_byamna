@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amna Ali | Frontend Developer Portfolio</title>
+    <meta name="description" content="Personal portfolio of Amna Ali, a Frontend Developer from Karachi, Pakistan. Specializing in modern, responsive web experiences with React.js and Tailwind CSS." />
+    
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Amna Ali | Frontend Developer Portfolio" />
+    <meta property="og:description" content="Personal portfolio of Amna Ali, a Frontend Developer from Karachi, Pakistan. Specializing in modern, responsive web experiences with React.js and Tailwind CSS." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Amna Ali | Frontend Developer" />
+    <meta name="twitter:description" content="Crafting Modern Digital Experiences with React.js, Tailwind CSS & JavaScript." />
+    
+    <!-- Google Fonts: Space Grotesk & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Prevent theme flash -->
+    <script>
+      (function() {
+        try {
+          const storedTheme = localStorage.getItem('amna_portfolio_theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-cyan-500/20 selection:text-cyan-700 dark:bg-[#080d1a] dark:text-slate-100 dark:selection:bg-cyan-500/30 dark:selection:text-cyan-300 font-sans transition-colors duration-300 min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
